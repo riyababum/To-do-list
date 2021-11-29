@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ubuntu:wght@400;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.navigation{
+    height:60px;
+    width: 100%;
+    background-color:rgb(225,198,178);
+    display: flex;
+    justify-content: space-between;
+}
+.navigation a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    font-size: 21px;
+    line-height: 30px;
+}
+.ttd{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top:30px;
+    cursor: pointer;
+}
+.list{
+    margin-top: 20px;
+    height: calc(100vh - 200px);
+    background-color:rgb(225,198,178);
+    padding: 20px;
+    overflow-y: scroll;
+    margin: 0 30px;
+}
+.list li{
+   list-style: none;
+   line-height: 28px;
+   font-size: 15px;
+   font-weight: 550;
+   position: relative;
+}
+.list li i{
+    position: absolute;
+    right:0px;
+    line-height: 28px;
+    font-size: 15px;
+ }
+ .list li i:hover{
+    color:rgb(241, 86, 86);
+ }
+.list li .done{
+    text-decoration: line-through;
+    color: rgb(247, 104, 104);
+}
+@media only screen and (min-width: 760px){
+    .navigation a{
+        font-size: 25px;
+    }
+    .ttd{
+        font-size: 32px;
+    }
+    .list{
+        height: calc(100vh - 220px);
+        margin: 0 80px;
+    }
+    .list li{
+       line-height: 32px;
+       font-weight: 600;
+       font-size: 17px;
+    }
+    .list li i{
+        line-height: 32px;
+        font-size: 17px;
+     }
+}
+@media only screen and (min-width: 1025px){
+    .list{
+        height: calc(100vh - 250px);
+        margin: 0 20%;
+    }
+    .list li{
+       line-height: 32px;
+       font-weight: 600;
+       font-size: 18px;
+    }
+    .list li i{
+        line-height: 34px;
+        font-size: 17px;
+     }
+}
